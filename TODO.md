@@ -1,5 +1,12 @@
 # TODO
 
+- Makefile: upload content, ...
+- Footer: TuxFamily acknowledgement
+- Improve the "main" sections
+- Gallery with sphinx-gallery
+- Short install with JS: recognize the OS, ...
+- Responsive design (?) / compliant with mobile devices ?
+
 - Inspiration list:
   - Nice modern HTML5 code
     - https://jupyter.org/
