@@ -1,9 +1,10 @@
 /* Style général */
 
 * {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #000;
-    font-size: 12px;
+    /* https://fonts.google.com/specimen/Lato */
+    font-family: "Lato","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #404040;
+    font-size: 14px;
     margin: 0;
     padding: 0;
 }
@@ -27,6 +28,7 @@ header h1 {
     float: left;
     font-size: 1.5em;
     font-weight: bold;
+    color: #505050;
 }
 
 /* cf. slack.com */
@@ -49,6 +51,7 @@ header nav ul li a {
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
+    color: #505050;
 }
 
 header nav ul li a:hover {
@@ -58,23 +61,45 @@ header nav ul li a:hover {
 /* Content */
  
 main {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
 }
 
 section {
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+
+    margin-bottom: 0em;
+    margin-bottom: 0em;
+
     text-align: justify;
+
+    line-height: 24px;
+}
+
+section * {
+    font-size: 18px;
+}
+
+section p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+section ul {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .project-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 70%;
 
     /*background-color: #acacac;*/
 }
@@ -83,7 +108,7 @@ section {
 /* See https://bokeh.pydata.org/ and https://orange.biolab.si/ */
 
 footer {
-    background-color: #acacac;
+    background-color: #8c8c8c;
 
     padding-left: 5rem;
     padding-right: 5rem;
@@ -95,7 +120,7 @@ footer {
     width: 100%;
     */
 
-    min-height: 5em;
+    min-height: 10rem;
 }
 
 footer ul {
@@ -117,19 +142,19 @@ footer ul li {
 }
 
 footer ul li > .footer-title {
-    color: #3a87ad;
-    font-size: 1em;
+    color: #404040;
     margin-bottom: 0.4em;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-footer ul li > .footer-copyright {
+footer ul li > .footer-copyright, footer ul li > .footer-tf {
     color: #eee;
     font-weight: bold;
 }
 
-footer ul li > .footer-copyright a {
+footer ul li > .footer-copyright a, footer ul li > .footer-tf a {
+    text-decoration: underline;
     color: #eee;
     font-weight: bold;
 }
