@@ -11,6 +11,7 @@
  
 body {
     background: #fff;
+    width: 100vw;
 }
 
 /* Header */
@@ -24,22 +25,40 @@ header {
     padding-bottom: 1rem;
 }
 
-header h1 {
-    float: left;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #505050;
+/* cf. slack.com */
+@media only screen and (min-width: 1001px) {
+    /* For desktop */
+    header h1 {
+        float: left;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #505050;
+    }
+
+    header nav ul {
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+        flex: 1;
+
+        text-align: center;
+        list-style: none;
+    }
 }
 
-/* cf. slack.com */
-header nav ul {
-    justify-content: flex-end;
-    display: flex;
-    align-items: center;
-    flex: 1;
+@media only screen and (max-width: 1000px) {
+    /* For mobile phones */
+    header h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #505050;
+        margin-bottom: 1em;
+    }
 
-    text-align: center;
-    list-style: none;
+    header nav ul {
+        text-align: left;
+        list-style: none;
+    }
 }
 
 header nav ul li {
@@ -60,11 +79,32 @@ header nav ul li a:hover {
 
 /* Content */
  
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+/* FOR DESKTOP */
+
 main {
     padding-top: 3rem;
     padding-bottom: 3rem;
+
+    /*
     padding-left: 30rem;
     padding-right: 30rem;
+    */
+
+    /* https://www.w3schools.com/html/html_responsive.asp */
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 50%;
+}
+
+/* FOR MOBILE PHONES */
+
+@media only screen and (max-width: 1000px) {
+    /* For mobile phones: */
+    main {
+        width: 90%;
+    }
 }
 
 section {
@@ -99,7 +139,10 @@ section ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+
+    /* https://www.w3schools.com/html/html_responsive.asp */
+    max-width: 90%;
+    height: auto;
 
     /*background-color: #acacac;*/
 }
